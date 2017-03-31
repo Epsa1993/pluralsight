@@ -6,7 +6,9 @@ export default function courseReducer(state = [], action) {
           return [...state,
              Object.ssign({}, action.course)
              ];
-           default:
+        case type.UPDATE_COURSE:
+          return state
+        default:
                 return state;
     }
 }
